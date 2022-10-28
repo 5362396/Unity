@@ -6,8 +6,6 @@ using UnityEngine;
 public class Lab3Zadanie5 : MonoBehaviour
 {
     public GameObject block;
-    public int width = 10;
-    public int height = 4;
     private float min = -4f;
     private float max = 5f;
     private float x;
@@ -39,7 +37,6 @@ public class Lab3Zadanie5 : MonoBehaviour
                 Instantiate(block, randomSpawnPosition, Quaternion.identity);
                 i++;
             }
-            
        } 
     }
 
