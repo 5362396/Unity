@@ -15966,16 +15966,18 @@ MonoBehaviour:
   m_GameObject: {fileID: 1633492602}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 068cbf67e8b85574e9d286182cf94563, type: 3}
+  m_Script: {fileID: 11500000, guid: f92fb8291c42ffd4587a0e645424b3b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  sensitivity: 2
 --- !u!43 &1637694256
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24806
+  m_Name: pb_Mesh57006
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -54851,7 +54853,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh24734
+  m_Name: pb_Mesh56934
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
