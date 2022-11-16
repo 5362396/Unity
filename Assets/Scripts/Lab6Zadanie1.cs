@@ -41,7 +41,6 @@ public class Lab6Zadanie1 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player wszedł na windę.");
             oldParent = other.gameObject.transform.parent;
             other.gameObject.transform.parent = transform;
             if (transform.position.x >= upPosition)
@@ -64,7 +63,6 @@ public class Lab6Zadanie1 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            Debug.Log("Player zszedł z windy.");
             other.gameObject.transform.parent = oldParent;
         }
     }
