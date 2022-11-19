@@ -7,30 +7,29 @@ public class Lab6Zadanie4 : MonoBehaviour
     private Vector3 playerVelocity;
     private float jumpHeight = 3f;
     private float gravityValue = -9.81f;
-    public CharacterController controller;
+    private GameObject player;
+    private CharacterController controller;
     private bool groundedPlayer;
-    private int xd;
+    private int changeState;
     void Start()
     {
-        xd = 0;
+        changeState = 0;
     }
 
     void Update()
     {
-        var player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag("Player");
         controller = player.GetComponent<CharacterController>();
-        
-        Debug.Log(playerVelocity.y);
         groundedPlayer = controller.isGrounded;
+
         if (groundedPlayer && playerVelocity.y > 9)
         {
-            xd = 0;
+            changeState = 0;
             playerVelocity.y = 0f;
         }
 
-        if (xd == 1)
+        if (changeState == 1)
         {
-            Debug.Log("jestem tu");
             if (groundedPlayer)
             {
                 playerVelocity.y += Mathf.Sqrt(jumpHeight * -3.0f * gravityValue);
@@ -43,7 +42,7 @@ public class Lab6Zadanie4 : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            xd = 1;
+            changeState = 1;
         }
     }
 }
