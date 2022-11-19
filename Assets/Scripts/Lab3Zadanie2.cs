@@ -25,7 +25,6 @@ public class Lab3Zadanie2 : MonoBehaviour
     {
         Vector3 velocity = new Vector3(1, 0, 0);
         velocity = velocity.normalized * speed * Time.deltaTime;
-        Debug.Log(transform.position.x);
         if (transform.position.x - startPosition < 10 && direction == 1)
         {
             rb.MovePosition(transform.position + velocity);

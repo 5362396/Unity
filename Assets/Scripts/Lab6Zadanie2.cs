@@ -46,17 +46,14 @@ public class Lab6Zadanie2 : MonoBehaviour
                 isRunningDown = true;
                 isRunningUp = false;
                 doorSpeed = -doorSpeed;
-                Debug.Log("1");
             }
             else if (transform.position.z <= downPosition && !isRunning)
             {
                 isRunningUp = true;
                 isRunningDown = false;
                 doorSpeed = Mathf.Abs(doorSpeed);
-                Debug.Log("2");
             }
             isRunning = true;
-            Debug.Log("3");
         }
     }
 
@@ -69,17 +66,14 @@ public class Lab6Zadanie2 : MonoBehaviour
                 isRunningDown = true;
                 isRunningUp = false;
                 doorSpeed = -doorSpeed;
-                Debug.Log("4");
             }
             else if (transform.position.z <= downPosition && !isRunning)
             {
                 isRunningUp = true;
                 isRunningDown = false;
                 doorSpeed = Mathf.Abs(doorSpeed);
-                Debug.Log("5");
             }
             isRunning = true;
-            Debug.Log("6");
         }
     }
 }

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Lab4Zadanie4 : MonoBehaviour
 {
-    private CharacterController controller;
+    public CharacterController controller;
     private Vector3 playerVelocity;
     private bool groundedPlayer;
     private float playerSpeed = 5.0f;
